@@ -42,7 +42,7 @@ return res.json({ error: 'No hay disponibilidad de productos' });
 }
 
 // Creamos la orden
-const response = await axios.get(`http://192.168.100.3:3101/usuarios/${usuario}`);
+const response = await axios.get(`http://namemicro:3101/usuarios/${usuario}`);
 const { nombre: name, email } = response.data;
 
 const orden = { nombreCliente: name, emailCliente: email, totalCuenta };
